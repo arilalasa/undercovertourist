@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %} 
+{% if result %}
+    {{result}}
+    {% if inventory_on_hand %}
+        
+        <li><b><a href="/undercovertourist/purchase/{{ id }}/">PURCHASE</b></a></li>
+    {% endif %}
+{% else %}
+    <p>No tickets are available at the moment.</p>
+{% endif %}
+{% endblock %}

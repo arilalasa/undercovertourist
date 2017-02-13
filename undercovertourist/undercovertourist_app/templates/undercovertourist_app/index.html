@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if request_json %}
+        <ul>
+        {% for data in request_json %}
+            <li><a href="/undercovertourist/{{ data.id }}/">{{ data.name }}---> ${{data.price}}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No polls are available.</p>
+    {% endif %}
+{% endblock %}

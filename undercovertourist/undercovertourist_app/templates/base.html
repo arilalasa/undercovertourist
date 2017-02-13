@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<!-- Website Template by freewebsitetemplates.com -->
+<html>
+<head>
+{% load static %}
+	<meta charset="UTF-8">
+	<title>Amusement Park Website Template</title>
+	<link rel="stylesheet" href="{% static "/css/style.css" %}" type="text/css">
+</head>
+<body>
+
+	<div id="background">
+		<div id="page">
+			<div id="header">
+				<a href="index.html" class="logo">Undercover Tourist</a>
+				<ul>
+					<li class="selected">
+						<a href="/undercovertourist/">home</a>
+					</li>
+					
+				</ul>
+			</div>
+			<div id="body">
+				
+				<div id="section">
+				{% block title %}
+					<h1>rides and attractions</h1> 
+				{% endblock %}
+					<div>
+						<div class="article">
+						{% block content %}
+							<p>
+								This website template hahs been designed by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freewebsitetemplates.com/forums/">Forums</a>.
+							</p>
+						{% endblock %}
+						</div>
+						
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>
